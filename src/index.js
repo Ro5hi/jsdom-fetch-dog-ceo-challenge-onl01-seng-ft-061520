@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   loadBreedOptions();
 });
 
-function loadImages() {
+function getImages() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
   fetch(imgUrl)
     .then(res=> res.json())
